@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                               { title: "Aula 37 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                               { title: "Aula 38 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                               { title: "Aula 39 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
-                                              { title: "Aula 40 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
+                                              { title: "Aula 40 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" }
                                              ] 
         },
         { name: "Prog. Web e BD", aulas: [{ title: "Aula 1 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
@@ -83,7 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                           { title: "Aula 37 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                           { title: "Aula 38 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                           { title: "Aula 39 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
-                                          { title: "Aula 40 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },] 
+                                          { title: "Aula 40 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" }
+                                         ] 
         },
         { name: "Prog. para Dispositivos Móveis", aulas: [{ title: "Aula 1 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                                           { title: "Aula 2 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
@@ -124,7 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
                                                           { title: "Aula 37 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                                           { title: "Aula 38 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                                           { title: "Aula 39 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
-                                                          { title: "Aula 40 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
+                                                          { title: "Aula 40 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" }
+                                                        ]
         }
     ];
 
