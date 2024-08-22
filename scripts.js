@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                               { title: "Aula 40 - Estrutura de Dados", link: "EstruturaDados/aula1-conteudo.html" }
                                              ] 
         },
-        { name: "Prog. Web e BD", aulas: [{ title: "Aula 1 - Introdução a JavaScript", link: "ProgWebEBD/aula1/aula1-prog-web-e-banco-de-dados.html" },
-                                          { title: "Aula 2 - Introdução a JavaScript", link: "ProgWebEBD/aula2/aula2-prog-web-e-banco-de-dados.html" },
-                                          { title: "Aula 3 - Introdução a JavaScript", link: "ProgWebEBD/aula3/aula3-prog-web-e-banco-de-dados.html" },
+        { name: "Prog. Web e BD", aulas: [{ title: "Aula 1 - Ementa da disciplina", link: "ProgWebEBD/aula1/aula1-prog-web-e-banco-de-dados.html" },
+                                          { title: "Aula 2 - Introdução a HTML", link: "ProgWebEBD/aula2/aula2-prog-web-e-banco-de-dados.html" },
+                                          { title: "Aula 3 - Introdução a CSS", link: "ProgWebEBD/aula3/aula3-prog-web-e-banco-de-dados.html" },
                                           { title: "Aula 4 - Introdução a JavaScript", link: "ProgWebEBD/aula4/aula4-prog-web-e-banco-de-dados.html" },
                                           { title: "Aula 5 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                           { title: "Aula 6 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
