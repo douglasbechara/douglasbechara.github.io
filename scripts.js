@@ -2,9 +2,9 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const disciplinas = [
-        { name: "Matemática", aulas: ["Aula 1", "Aula 2", "Aula 3"] },
-        { name: "Física", aulas: ["Aula 1", "Aula 2"] },
-        { name: "Química", aulas: ["Aula 1"] }
+        { name: "Estrutura de dados", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] },
+        { name: "Programação web e banco de dados", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] },
+        { name: "Programação para dispositivos móveis", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] }
     ];
 
     const disciplinasList = document.getElementById("disciplinas");
