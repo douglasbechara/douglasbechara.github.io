@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const disciplinas = [
         { name: "Estrutura de Dados", aulas: ["Aula 1", "Aula 2", 
-                                              { title: "Aula 3 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" }
+                                              { title: "Aula 3 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
                                               "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] },
         { name: "Prog. Web e BD", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] },
         { name: "Prog. para Dispositivos Móveis", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] }
@@ -29,7 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
         aulasDiv.innerHTML = ""; // Limpa as aulas existentes
         aulas.forEach(aula => {
             const aulaDiv = document.createElement("div");
-            aulaDiv.textContent = aula;
+            
+            if (typeof aula === "string") {
+                aulaDiv.textContent = aula;
+            } else if (typeof aula === "object" && aula.link) {
+                const aulaLink = document.createElement("a");
+                aulaLink.href = aula.link;
+                aulaLink.textContent = aula.title;
+                aulaLink.target = "_blank"; // Abrir em uma nova aba
+                aulaDiv.appendChild(aulaLink);
+            }
             aulasDiv.appendChild(aulaDiv);
         });
     }
