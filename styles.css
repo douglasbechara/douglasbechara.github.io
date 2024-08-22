@@ -1,71 +1,61 @@
+/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-nav {
-    background: #333;
-    color: white;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-nav ul li {
-    margin: 0 10px;
+.container {
+    display: flex;
+    width: 100%;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
 }
 
-section {
+.sidebar h2 {
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+.sidebar ul li {
+    margin-bottom: 10px;
+}
 
-    nav ul li {
-        margin: 5px 0;
-    }
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
 
-    footer {
-        position: static;
-    }
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#disciplinas a.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
