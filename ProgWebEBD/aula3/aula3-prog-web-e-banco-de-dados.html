@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Introdução a JavaScript</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link para o CSS global -->
+    <style>
+        /* Estilos específicos para esta página */
+        .example {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #333;
+        }
+        .code {
+            background-color: #eee;
+            padding: 10px;
+            margin-top: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Disciplinas</h2>
+            <ul>
+                <li><a href="../index.html">Voltar para Disciplinas</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+          
+            <!-- Navegação para Aulas Anterior e Próxima -->
+            <div class="navigation">
+                <a href="ProgWebEBD/aula2/aula2-prog-web-e-banco-de-dados.html">← Aula Anterior: Introdução ao JavaScript (Parte 2)</a>
+                <a href="ProgWebEBD/aula4/aula4-prog-web-e-banco-de-dados.html">Próxima Aula: Introdução ao JavaScript (Parte 4) →</a>
+            </div>
+           
+            <h1>Introdução a JavaScript</h1>
+            <p>JavaScript é uma linguagem de programação que permite criar conteúdo dinâmico em páginas web. Nesta aula, vamos cobrir os fundamentos de JavaScript e ver alguns exemplos práticos de como ele pode ser usado para manipular elementos na página.</p>
+
+            <h2>Exemplo 1: Exibir uma mensagem de alerta</h2>
+            <div class="example">
+                <p>O código abaixo exibe uma mensagem de alerta na tela:</p>
+                <div class="code">
+                    <code>
+&lt;script&gt;<br>
+    alert("Olá, bem-vindo ao JavaScript!");<br>
+&lt;/script&gt;
+                    </code>
+                </div>
+            </div>
+            <p>Quando você carrega a página com esse código, uma caixa de alerta será exibida com a mensagem.</p>
+
+            <h2>Exemplo 2: Manipulando o conteúdo de um elemento HTML</h2>
+            <div class="example">
+                <p>O código abaixo altera o texto de um parágrafo quando o botão é clicado:</p>
+                <div class="code">
+                    <code>
+&lt;p id="meu-paragrafo"&gt;Este é o texto original.&lt;/p&gt;<br>
+&lt;button onclick="mudarTexto()"&gt;Clique aqui&lt;/button&gt;<br><br>
+
+&lt;script&gt;<br>
+    function mudarTexto() {<br>
+        document.getElementById("meu-paragrafo").innerHTML = "O texto foi alterado!";<br>
+    }<br>
+&lt;/script&gt;
+                    </code>
+                </div>
+            </div>
+            <p>Ao clicar no botão, o texto do parágrafo será substituído pelo novo texto.</p>
+
+            <h2>Exemplo 3: Somando dois números</h2>
+            <div class="example">
+                <p>O código abaixo permite que o usuário insira dois números e exibe a soma deles:</p>
+                <div class="code">
+                    <code>
+&lt;input type="number" id="num1" placeholder="Digite o primeiro número"&gt;<br>
+&lt;input type="number" id="num2" placeholder="Digite o segundo número"&gt;<br>
+&lt;button onclick="somar()"&gt;Somar&lt;/button&gt;<br><br>
+
+&lt;p id="resultado"&gt;&lt;/p&gt;<br><br>
+
+&lt;script&gt;<br>
+    function somar() {<br>
+        var n1 = parseFloat(document.getElementById("num1").value);<br>
+        var n2 = parseFloat(document.getElementById("num2").value);<br>
+        var resultado = n1 + n2;<br>
+        document.getElementById("resultado").innerHTML = "O resultado é: " + resultado;<br>
+    }<br>
+&lt;/script&gt;
+                    </code>
+                </div>
+            </div>
+            <p>Após inserir os números e clicar em "Somar", o resultado da soma será exibido.</p>
+            
+            
+            <!-- Navegação para Aulas Anterior e Próxima -->
+            <div class="navigation">
+                <a href="ProgWebEBD/aula2/aula2-prog-web-e-banco-de-dados.html">← Aula Anterior: Introdução ao JavaScript (Parte 2)</a>
+                <a href="ProgWebEBD/aula4/aula4-prog-web-e-banco-de-dados.html">Próxima Aula: Introdução ao JavaScript (Parte 4) →</a>
+            </div>
+       
+        </main>
+    </div>
+</body>
+</html>
