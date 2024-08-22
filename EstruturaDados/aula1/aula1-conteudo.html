@@ -1,1 +1,178 @@
-<H1>Em desenvolvimento...</H1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Dados: Variáveis, Funções e Procedimentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estrutura de Dados: Variáveis Locais e Globais, Funções e Procedimentos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#variaveis">Variáveis Locais e Globais</a></li>
+            <li><a href="#funcoes">Funções e Procedimentos</a></li>
+            <li><a href="#resumo">Resumo e Exercícios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="variaveis">
+            <h2>Variáveis Locais e Globais</h2>
+            <p>As variáveis locais e globais são usadas para armazenar dados em diferentes escopos. Variáveis globais são acessíveis em todo o programa, enquanto variáveis locais são acessíveis apenas dentro do escopo onde foram declaradas.</p>
+            <h3>Exemplo em Visualg</h3>
+            <pre>
+algoritmo "ExemploVariaveis"
+var
+    global x: inteiro  // Declaração de uma variável global
+
+procedimento Exemplo()
+var
+    local y: inteiro  // Declaração de uma variável local
+inicio
+    x := 10  // Atribuição de valor à variável global
+    y := 20  // Atribuição de valor à variável local
+    escreva("x: ", x, " y: ", y)  // Exibe os valores de x e y
+fimalgoritmo
+            </pre>
+            <h3>Exemplo em Python</h3>
+            <pre>
+x = 10  # Variável global
+
+def exemplo():
+    y = 20  # Variável local
+    print("x:", x, "y:", y)  # Exibe os valores de x (global) e y (local)
+
+exemplo()  # Chama a função exemplo
+            </pre>
+            <h3>Exemplo em Java</h3>
+            <pre>
+public class ExemploVariaveis {
+    static int x = 10; // Variável global
+
+    public static void exemplo() {
+        int y = 20; // Variável local
+        System.out.println("x: " + x + " y: " + y); // Exibe x (global) e y (local)
+    }
+
+    public static void main(String[] args) {
+        exemplo(); // Chama o método exemplo
+    }
+}
+            </pre>
+            <h3>Exemplo em C</h3>
+            <pre>
+#include &lt;stdio.h&gt;
+
+int x = 10; // Variável global
+
+void exemplo() {
+    int y = 20; // Variável local
+    printf("x: %d y: %d\n", x, y); // Exibe x (global) e y (local)
+}
+
+int main() {
+    exemplo(); // Chama a função exemplo
+    return 0;
+}
+            </pre>
+            <h3>Fluxograma: Variáveis Locais e Globais</h3>
+            <img src="fluxograma_variaveis_locais_globais.png" alt="Fluxograma de Variáveis Locais e Globais">
+        </section>
+        <section id="funcoes">
+            <h2>Funções e Procedimentos</h2>
+            <p>Funções e procedimentos são blocos de código reutilizáveis. Funções retornam um valor após a execução, enquanto procedimentos executam operações sem retornar valores.</p>
+            <h3>Exemplo em Visualg</h3>
+            <pre>
+algoritmo "FuncoesEProcedimentos"
+var
+    a, b, soma: inteiro
+
+// Função que recebe dois inteiros e retorna a soma
+funcao somar(x: inteiro, y: inteiro): inteiro
+inicio
+    somar := x + y  // Retorna a soma de x e y
+fimfuncao
+
+// Procedimento que recebe um inteiro e exibe o valor
+procedimento mostrarResultado(resultado: inteiro)
+inicio
+    escreva("Resultado: ", resultado)  // Exibe o resultado
+fimalgoritmo
+            </pre>
+            <h3>Exemplo em Python</h3>
+            <pre>
+def somar(x, y):
+    return x + y  # Retorna a soma de x e y
+
+def mostrar_resultado(resultado):
+    print("Resultado:", resultado)  # Exibe o resultado
+
+a = 5
+b = 10
+resultado = somar(a, b)  # Chama a função somar e armazena o resultado
+mostrar_resultado(resultado)  # Chama o procedimento para exibir o resultado
+            </pre>
+            <h3>Exemplo em Java</h3>
+            <pre>
+public class FuncoesEProcedimentos {
+
+    // Função que recebe dois inteiros e retorna a soma
+    public static int somar(int x, int y) {
+        return x + y; // Retorna a soma de x e y
+    }
+
+    // Procedimento que recebe um inteiro e exibe o valor
+    public static void mostrarResultado(int resultado) {
+        System.out.println("Resultado: " + resultado); // Exibe o resultado
+    }
+
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        int resultado = somar(a, b); // Chama a função somar
+        mostrarResultado(resultado); // Chama o procedimento para exibir o resultado
+    }
+}
+            </pre>
+            <h3>Exemplo em C</h3>
+            <pre>
+#include &lt;stdio.h&gt;
+
+// Função que recebe dois inteiros e retorna a soma
+int somar(int x, int y) {
+    return x + y; // Retorna a soma de x e y
+}
+
+// Procedimento que recebe um inteiro e exibe o valor
+void mostrarResultado(int resultado) {
+    printf("Resultado: %d\n", resultado); // Exibe o resultado
+}
+
+int main() {
+    int a = 5;
+    int b = 10;
+    int resultado = somar(a, b); // Chama a função somar
+    mostrarResultado(resultado); // Chama o procedimento para exibir o resultado
+    return 0;
+}
+            </pre>
+            <h3>Fluxograma: Funções e Procedimentos</h3>
+            <img src="fluxograma_funcoes_procedimentos.png" alt="Fluxograma de Funções e Procedimentos">
+        </section>
+        <section id="resumo">
+            <h2>Resumo e Exercícios</h2>
+            <p>Funções e procedimentos são fundamentais para organizar e modularizar o código, melhorando a legibilidade e a reutilização de componentes. Variáveis locais e globais desempenham um papel crucial na definição de escopo e acessibilidade de dados dentro de um programa.</p>
+            <h3>Exercícios Propostos</h3>
+            <ul>
+                <li>Crie um algoritmo em Visualg que utilize uma função e um procedimento.</li>
+                <li>Implemente em Python, Java e C um programa que utilize variáveis locais e globais, funções e procedimentos.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Estrutura de Dados</p>
+    </footer>
+</body>
+</html>
