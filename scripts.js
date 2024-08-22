@@ -3,7 +3,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const disciplinas = [
         { name: "Estrutura de Dados", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] },
-        { name: "Prog. Web e BD", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] },
+        { name: "Prog. Web e BD", aulas: ["Aula 1", "Aula 2", "Aula 3",
+                                          { title: "Aula 3 - Introdução a JavaScript", link: "ProgWebEBD/aula3-introducao-javascript.html" },
+                                         "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] },
         { name: "Prog. para Dispositivos Móveis", aulas: ["Aula 1", "Aula 2", "Aula 3", "Aula 4", "Aula 5", "Aula 6", "Aula 7", "Aula 8", "Aula 9", "Aula 10", "Aula 11", "Aula 12", "Aula 13", "Aula 14", "Aula 15", "Aula 16", "Aula 17", "Aula 18", "Aula 19", "Aula 20"] }
     ];
 
