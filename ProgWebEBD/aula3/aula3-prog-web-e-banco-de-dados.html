@@ -95,6 +95,125 @@
                 </div>
             </div>
             <p>Após inserir os números e clicar em "Somar", o resultado da soma será exibido.</p>
+
+
+
+            <h2>Exemplo 4: Declaração de Variáveis</h2>
+            <p>Em JavaScript, podemos declarar variáveis usando <code>var</code>, <code>let</code> e <code>const</code>. Vamos ver como cada uma funciona.</p>
+            <div class="example">
+                <p>O código abaixo demonstra como declarar variáveis:</p>
+                <div class="code">
+                    <code>
+// Declaração de uma variável que pode ser alterada
+var mensagem = "Olá, Mundo!"; // 'var' permite que a variável seja redeclarada e reassinada
+console.log(mensagem); // Exibe 'Olá, Mundo!' no console
+
+// Declaração de uma variável de escopo limitado
+let nome = "João"; // 'let' é usado para variáveis cujo valor pode mudar, mas não pode ser redeclarada no mesmo escopo
+console.log(nome); // Exibe 'João' no console
+
+// Declaração de uma constante
+const pi = 3.14; // 'const' é usado para valores constantes que não podem ser alterados
+console.log(pi); // Exibe 3.14 no console
+                    </code>
+                </div>
+            </div>
+            <p>
+                <strong>Palavras-chave:</strong> 
+                <ul>
+                    <li><code>var</code>: Declara uma variável global ou localmente na função sem restrições de escopo de bloco. Pode ser redeclarada e reassinada.</li>
+                    <li><code>let</code>: Declara uma variável com escopo de bloco, permitindo reassinamento, mas não redeclaração no mesmo escopo.</li>
+                    <li><code>const</code>: Declara uma variável com escopo de bloco que não pode ser reassinada após a inicialização.</li>
+                </ul>
+            </p>
+
+            <h2>Exemplo 5: Criando e Chamando Funções</h2>
+            <p>Funções em JavaScript permitem encapsular lógica que pode ser reutilizada em várias partes do código.</p>
+            <div class="example">
+                <p>O código abaixo demonstra como criar e chamar funções:</p>
+                <div class="code">
+                    <code>
+// Função que exibe uma mensagem de boas-vindas
+function boasVindas(nome) { // A função 'boasVindas' recebe um parâmetro 'nome'
+    return "Bem-vindo, " + nome + "!"; // A função retorna uma saudação personalizada
+}
+
+console.log(boasVindas("Maria")); // Chama a função com o argumento 'Maria' e exibe 'Bem-vindo, Maria!' no console
+
+// Função que soma dois números
+function somar(a, b) { // A função 'somar' recebe dois parâmetros: 'a' e 'b'
+    return a + b; // A função retorna a soma de 'a' e 'b'
+}
+
+console.log(somar(5, 3)); // Chama a função com os argumentos 5 e 3, e exibe '8' no console
+                    </code>
+                </div>
+            </div>
+            <p>
+                <strong>Palavras-chave:</strong>
+                <ul>
+                    <li><code>function</code>: Define uma função em JavaScript.</li>
+                    <li><code>return</code>: Retorna um valor de uma função e encerra a execução dessa função.</li>
+                    <li><code>console.log()</code>: Exibe uma mensagem no console do navegador para fins de depuração.</li>
+                </ul>
+            </p>
+
+            <h2>Exemplo 6: Estruturas de Repetição (Loops)</h2>
+            <p>Os loops permitem executar um bloco de código várias vezes de acordo com uma condição.</p>
+            <div class="example">
+                <p>O código abaixo demonstra como usar um loop <code>for</code>:</p>
+                <div class="code">
+                    <code>
+// Loop 'for' que itera de 0 a 4
+for (let i = 0; i < 5; i++) { // A variável 'i' começa em 0, e o loop continua enquanto 'i' for menor que 5
+    console.log("Número: " + i); // Exibe o valor de 'i' no console a cada iteração
+}
+
+// Loop 'while' que itera enquanto uma condição for verdadeira
+let j = 0;
+while (j < 5) { // O loop continua enquanto 'j' for menor que 5
+    console.log("Contagem: " + j); // Exibe o valor de 'j' no console
+    j++; // Incrementa 'j' em 1 a cada iteração
+}
+                    </code>
+                </div>
+            </div>
+            <p>
+                <strong>Palavras-chave:</strong>
+                <ul>
+                    <li><code>for</code>: Estrutura de repetição que itera um bloco de código um número específico de vezes.</li>
+                    <li><code>while</code>: Estrutura de repetição que itera um bloco de código enquanto a condição especificada for verdadeira.</li>
+                    <li><code>console.log()</code>: Exibe uma mensagem no console do navegador para fins de depuração.</li>
+                </ul>
+            </p>
+
+            <h2>Exemplo 7: Manipulando o DOM (Document Object Model)</h2>
+            <p>O DOM permite que JavaScript interaja com o conteúdo de uma página HTML. Podemos usar JavaScript para alterar elementos HTML dinamicamente.</p>
+            <div class="example">
+                <p>O código abaixo demonstra como alterar o conteúdo de um elemento HTML usando JavaScript:</p>
+                <div class="code">
+                    <code>
+// Alterando o conteúdo de um elemento HTML
+document.getElementById("demo").innerHTML = "Texto alterado!"; // Encontra o elemento com o id 'demo' e altera seu conteúdo
+                    </code>
+                </div>
+            </div>
+            <p>
+                <strong>Palavras-chave:</strong>
+                <ul>
+                    <li><code>document</code>: Representa o documento HTML carregado no navegador.</li>
+                    <li><code>getElementById()</code>: Método que retorna o elemento com o id especificado.</li>
+                    <li><code>innerHTML</code>: Propriedade que define ou retorna o conteúdo HTML de um elemento.</li>
+                </ul>
+            </p>
+
+            <!-- Navegação para Aulas Anterior e Próxima no final da página -->
+            <div class="navigation">
+                <a href="aula2-introducao-javascript.html">← Aula Anterior: Introdução ao JavaScript (Parte 2)</a>
+                <a href="aula4-introducao-javascript.html">Próxima Aula: Introdução ao JavaScript (Parte 4) →</a>
+            </div>
+
+
             
             
             <!-- Navegação para Aulas Anterior e Próxima -->
