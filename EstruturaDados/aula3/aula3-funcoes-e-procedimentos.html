@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Dados: Funções e Procedimentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+        pre {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estrutura de Dados: Funções e Procedimentos</h1>
+    </header>
+    <section>
+        <h2>Introdução</h2>
+        <p>Funções e procedimentos são blocos de código reutilizáveis que ajudam a modularizar e organizar um programa. Funções retornam valores após sua execução, enquanto procedimentos realizam operações sem retornar um valor específico.</p>
+    </section>
+    <section>
+        <h2>Exemplos de Funções e Procedimentos</h2>
+        <h3>Visualg</h3>
+        <pre>
+// Procedimento para exibir uma mensagem
+procedimento exibirMensagem()
+inicio
+    escreva("Olá, bem-vindo à aula de Funções e Procedimentos!")
+fimalgoritmo
+
+// Função que retorna a soma de dois números
+funcao somar(x: inteiro, y: inteiro): inteiro
+inicio
+    somar := x + y  // Atribui a soma de x e y à função somar
+fimfuncao
+        </pre>
+        <h3>Python</h3>
+        <pre>
+# Procedimento (função sem retorno) para exibir uma mensagem
+def exibir_mensagem():
+    print("Olá, bem-vindo à aula de Funções e Procedimentos!")
+
+# Função que retorna a soma de dois números
+def somar(x, y):
+    return x + y  # Retorna a soma de x e y
+        </pre>
+        <h3>C</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+
+// Procedimento em C (função void) para exibir uma mensagem
+void exibirMensagem() {
+    printf("Olá, bem-vindo à aula de Funções e Procedimentos!\\n");
+}
+
+// Função que retorna a soma de dois números
+int somar(int x, int y) {
+    return x + y;  // Retorna a soma de x e y
+}
+        </pre>
+        <h3>Java</h3>
+        <pre>
+public class FuncoesProcedimentos {
+
+    // Procedimento em Java (método sem retorno) para exibir uma mensagem
+    public static void exibirMensagem() {
+        System.out.println("Olá, bem-vindo à aula de Funções e Procedimentos!");
+    }
+
+    // Função que retorna a soma de dois números
+    public static int somar(int x, int y) {
+        return x + y;  // Retorna a soma de x e y
+    }
+
+    public static void main(String[] args) {
+        exibirMensagem();  // Chama o procedimento
+        int resultado = somar(10, 20);  // Chama a função e armazena o resultado
+        System.out.println("A soma é: " + resultado);
+    }
+}
+        </pre>
+    </section>
+    <section>
+        <h2>Fluxograma de Funções e Procedimentos</h2>
+        <p>Abaixo está um exemplo de como você pode criar um fluxograma para representar o fluxo de funções e procedimentos:</p>
+        <p><strong>Início → Chamada de Função ou Procedimento → Função (Com Retorno) / Procedimento (Sem Retorno) → Fim</strong></p>
+        <p>Utilize ferramentas como Lucidchart, Draw.io, ou Google Drawings para criar o fluxograma e inseri-lo aqui como uma imagem.</p>
+    </section>
+    <section>
+        <h2>Resumo e Conclusão</h2>
+        <p>Funções e procedimentos são fundamentais na programação para modularizar e organizar o código. Eles permitem a reutilização de código e facilitam a manutenção e compreensão de programas complexos.</p>
+        <p>Matrizes são amplamente usadas para representar dados tabulares ou realizar operações matemáticas, enquanto vetores são usados para armazenar sequências de elementos. Ambos desempenham um papel crucial no desenvolvimento de algoritmos eficientes.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Estrutura de Dados - Funções e Procedimentos</p>
+    </footer>
+</body>
+</html>
