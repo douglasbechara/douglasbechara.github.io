@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const disciplinas = [
         { name: "Estrutura de Dados", aulas: [{ title: "Aula 1 - Estrutura de Dados", link: "EstruturaDados/aula1-conteudo.html"  },
                                               { title: "Aula 2 - Variáveis Locais e Globais", link: "EstruturaDados/aula1-conteudo.html"  },
-                                              { title: "Aula 3 - Funções e procedimentos", link: "EstruturaDados/aula3-funcoes-e-procedimentos.html"  },
+                                              { title: "Aula 3 - Funções e procedimentos", link: "EstruturaDados/aula3/aula3-funcoes-e-procedimentos.html"  },
                                               { title: "Aula 4 - Estruturas de Dados Homogêneas (vetores)", link: "EstruturaDados/aula1-conteudo.html"  },
                                               { title: "Aula 5 - Estruturas de Dados Homogêneas (matrizes)", link: "EstruturaDados/aula1-conteudo.html"  },
                                               { title: "Aula 6 - Estruturas de Dados Heterogênas (arquivos)", link: "EstruturaDados/aula1-conteudo.html"  },
